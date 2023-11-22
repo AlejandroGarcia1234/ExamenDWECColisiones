@@ -1,4 +1,4 @@
-// GitHub: 
+// GitHub: https://github.com/AlejandroGarcia1234/ExamenDWECColisiones
 
 import { Ball, balls } from "./ball-class.js";
 import { ctx, width, height, random} from "./canvas-main.js";
