@@ -13,12 +13,12 @@ function randomRGB() {
 }
 
 class Ball {
-    constructor(x, y, velX, velY, color, size) {
+    constructor(x, y, velX, velY, size) {
         this.x = x;
         this.y = y;
         this.velX = velX;
         this.velY = velY;
-        this.color = color;
+        this.color = randomRGB();
         this.size = size;
     }
 
@@ -55,7 +55,7 @@ class Ball {
 
 const balls = [];
 
-while (balls.length < 4) {
+while (balls.length < 25) {
     const size = random(10, 20);
     const ball = new Ball(
         random(0 + size, width - size),
@@ -63,7 +63,6 @@ while (balls.length < 4) {
         random(-7, 7),
         random(-7, 7),
 
-        randomRGB(),
         size
     );
 
